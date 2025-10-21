@@ -78,3 +78,29 @@ del b[-2]
 
 print('실행결과:', b)
 
+#과제21
+
+a = input('Hello, world!를 입력:')  
+a = a.replace('Hello', 'Hi')       
+print(a)      
+
+#과제22
+
+a = map(str, input('임의의 4개 문자 입력: ').split())
+sting_var = '/'.join(a)
+print(sting_var)
+
+#과제23
+
+n = 'LEE'
+n = n.rjust(10).lower()
+print(n)
+
+#과제24
+
+user_input = input('물품가격 여러개 입력: ')
+a = list(map(int, user_input.split(';')))
+a.sort(reverse=True)
+
+for item in a:
+    print(str(item).rjust(9))
